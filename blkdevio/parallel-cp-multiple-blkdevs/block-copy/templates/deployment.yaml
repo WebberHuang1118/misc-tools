@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: block-copy-deployment
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: block-copy
+  template:
+    metadata:
+      labels:
+        app: block-copy
+    spec:
+      containers:
+      - name: block-copy-check
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        securityContext:
+          privileged: {{ .Values.securityContext.privileged }}
+        args:
+          - "{{ .Values.sleepInterval }}"  # Pass the sleep interval as the first argument
+          {{- range .Values.devicePairs }}
+          - "{{ .bDevice }}"
+          - "{{ .rDevice }}"
+          {{- end }}
+        # Generate volumeDevices dynamically
+        volumeDevices:
+        {{- range .Values.devicePairs }}
+        - devicePath: /dev/{{ .bDevice }}
+          name: volume-{{ .bDevice }}
+        - devicePath: /dev/{{ .rDevice }}
+          name: volume-{{ .rDevice }}
+        {{- end }}
+      restartPolicy: Always
+      # Generate volumes dynamically
+      volumes:
+      {{- range .Values.devicePairs }}
+      - name: volume-{{ .bDevice }}
+        persistentVolumeClaim:
+          claimName: pvc-{{ .bDevice }}
+      - name: volume-{{ .rDevice }}
+        persistentVolumeClaim:
+          claimName: pvc-{{ .rDevice }}
+      {{- end }}
+      nodeSelector:
+{{ toYaml .Values.nodeSelector | indent 8 }}
+      tolerations:
+{{ toYaml .Values.tolerations | indent 8 }}
+      affinity:
+{{ toYaml .Values.affinity | indent 8 }}

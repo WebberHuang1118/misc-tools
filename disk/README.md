@@ -1,0 +1,1 @@
+$ attach-disk.sh vagrant-pxe-harvester_harvester-node-0 sdc 10

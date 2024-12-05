@@ -1,0 +1,35 @@
+replicaCount: 1
+
+image:
+  repository: myregistry.com/myuser/block-copy-check
+  tag: v1
+  pullPolicy: IfNotPresent
+
+# Define the sleep interval between each iteration
+sleepInterval: 10  # Number of seconds to wait between iterations
+
+# Define pairs of block devices
+devicePairs:
+  - bDevice: b1
+    rDevice: r1
+    size: 10Gi
+  - bDevice: b2
+    rDevice: r2
+    size: 10Gi
+  - bDevice: b3
+    rDevice: r3
+    size: 10Gi
+
+pvc:
+  storageClass: longhorn
+
+securityContext:
+  privileged: true
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
