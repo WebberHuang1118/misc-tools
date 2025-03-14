@@ -1,7 +1,8 @@
 #!/bin/bash
+# Usage: ./script.sh <desired_replica_count>
+# Example: ./script.sh 2
 
-# Check if a desired replica count is provided
-if [ -z "$1" ]; then
+if [ $# -lt 1 ]; then
     echo "Usage: $0 <desired_replica_count>"
     exit 1
 fi
@@ -9,30 +10,44 @@ fi
 DESIRED_REPLICA_COUNT=$1
 NAMESPACE="longhorn-system"
 
-# Get all Longhorn volumes and replicas in JSON format
-volumes=$(kubectl get volumes.longhorn.io -n $NAMESPACE -o json)
-replicas=$(kubectl get replicas.longhorn.io -n $NAMESPACE -o json)
+echo "Finding volumes with exactly $DESIRED_REPLICA_COUNT replicas (filtered by replica name prefix matching the volume name) in namespace $NAMESPACE..."
 
-# Initialize an array to store matching volumes
-matching_volumes=()
+# Get all volumes in the namespace as JSON.
+volumes=$(kubectl get volume -n "$NAMESPACE" -o json)
 
-# Process each volume
-echo "Volumes with $DESIRED_REPLICA_COUNT replicas:"
-echo "--------------------------------------"
-
-for volume_name in $(echo "$volumes" | jq -r '.items[].metadata.name'); do
-    replica_count=$(echo "$replicas" | jq -r --arg volume_name "$volume_name" '.items[] | select(.spec.volumeName == $volume_name) | .metadata.name' | wc -l)
+# Iterate over each volume.
+echo "$volumes" | jq -r '.items[].metadata.name' | while read -r vol; do
+    # Fetch replicas for the volume via label and filter by name prefix.
+    replica_json=$(kubectl get replica -n "$NAMESPACE" -l longhornvolume="$vol" -o json)
+    replica_count=$(echo "$replica_json" | jq '[.items[] | select(.metadata.name | startswith("'"$vol"'"))] | length')
     
     if [ "$replica_count" -eq "$DESIRED_REPLICA_COUNT" ]; then
-        matching_volumes+=("$volume_name")
+        echo "---------------------------------------"
+        echo "Volume: $vol"
+        
+        # Retrieve volume's spec.nodeID, status.state, and status.robustness.
+        vol_node=$(kubectl get volume "$vol" -n "$NAMESPACE" -o jsonpath='{.spec.nodeID}')
+        vol_state=$(kubectl get volume "$vol" -n "$NAMESPACE" -o jsonpath='{.status.state}')
+        vol_robust=$(kubectl get volume "$vol" -n "$NAMESPACE" -o jsonpath='{.status.robustness}')
+        echo "  spec.nodeID: $vol_node"
+        echo "  status.state: $vol_state"
+        echo "  status.robustness: $vol_robust"
+        
+        echo "  Replicas:"
+        # Print header with adjusted column widths.
+        printf "    %-60s %-20s %-20s\n" "Replica Name:" "Replica spec.nodeID:" "Replica status.currentState:"
+        
+        # Extract each matching replica's details, using "N/A" for missing values.
+        echo "$replica_json" | jq -r --arg vol "$vol" \
+          ' .items[] | select(.metadata.name | startswith($vol)) |
+            [ (.metadata.name // "N/A"),
+              (.spec.nodeID // "N/A"),
+              (.status.currentState // "N/A") ] | @tsv' \
+          | while IFS=$'\t' read -r r_name r_node r_state; do
+                printf "    %-60s %-20s %-20s\n" "$r_name" "$r_node" "$r_state"
+          done
+        echo ""
     fi
 done
 
-# Print matched volumes
-for volume in "${matching_volumes[@]}"; do
-    echo "- $volume"
-done
-
-# Print total count
-echo "--------------------------------------"
-echo "Total number of volumes with $DESIRED_REPLICA_COUNT replicas: ${#matching_volumes[@]}"
+echo "---------------------------------------"
