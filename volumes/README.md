@@ -20,3 +20,6 @@
 
 6. Find volume with specific replica numbers
     $ ./find_replica_count_volumes.sh <#replica>
+
+7. Find volume's details with assigned volume name
+    $ ./find_volume_details.sh <volume name>
