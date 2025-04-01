@@ -10,21 +10,16 @@ fi
 VOL_NAME=$1
 NAMESPACE="longhorn-system"
 
-# Retrieve volume details.
+# ----------------------------------------------------------------------------------
+# Retrieve VOLUME details.
+# ----------------------------------------------------------------------------------
 vol_spec_node=$(kubectl get volume "$VOL_NAME" -n "$NAMESPACE" -o jsonpath='{.spec.nodeID}')
 vol_state=$(kubectl get volume "$VOL_NAME" -n "$NAMESPACE" -o jsonpath='{.status.state}')
 vol_robust=$(kubectl get volume "$VOL_NAME" -n "$NAMESPACE" -o jsonpath='{.status.robustness}')
 
-# Display volume information.
-echo "======================================="
-printf "Volume: %s\n" "$VOL_NAME"
-echo "---------------------------------------"
-printf "  %-22s %s\n" "spec.nodeID:" "$vol_spec_node"
-printf "  %-22s %s\n" "status.robustness:" "$vol_robust"
-printf "  %-22s %s\n" "status.state:" "$vol_state"
-echo "======================================="
-
-# Retrieve engine details.
+# ----------------------------------------------------------------------------------
+# Retrieve ENGINE details.
+# ----------------------------------------------------------------------------------
 engine_json=$(kubectl get engine -n "$NAMESPACE" -l longhornvolume="$VOL_NAME" -o json)
 engine_count=$(echo "$engine_json" | jq '.items | length')
 
@@ -32,31 +27,82 @@ if [ "$engine_count" -gt 0 ]; then
     engine_name=$(echo "$engine_json" | jq -r '.items[0].metadata.name // "N/A"')
     engine_spec_node=$(echo "$engine_json" | jq -r '.items[0].spec.nodeID // "N/A"')
     engine_state=$(echo "$engine_json" | jq -r '.items[0].status.currentState // "N/A"')
-    echo "Engine:"
-    echo "---------------------------------------"
-    printf "  %-22s %s\n" "Name:" "$engine_name"
-    printf "  %-22s %s\n" "spec.nodeID:" "$engine_spec_node"
-    printf "  %-22s %s\n" "status.currentState:" "$engine_state"
+    engine_replica_map_json=$(echo "$engine_json" | jq '.items[0].status.currentReplicaAddressMap')
 else
-    echo "Engine: No engine found for volume $VOL_NAME"
+    engine_name="N/A"
+    engine_spec_node="N/A"
+    engine_state="N/A"
+    engine_replica_map_json="{}"
 fi
-echo "======================================="
 
-# Retrieve replica details.
+# ----------------------------------------------------------------------------------
+# Retrieve REPLICA details.
+# ----------------------------------------------------------------------------------
 replica_json=$(kubectl get replica -n "$NAMESPACE" -l longhornvolume="$VOL_NAME" -o json)
 replica_count=$(echo "$replica_json" | jq '.items | length')
 
-echo "Replicas:"
-echo "---------------------------------------"
+# ----------------------------------------------------------------------------------
+# Print the results in a hierarchical format.
+# ----------------------------------------------------------------------------------
+echo "================================================================================"
+echo "Volume: ${VOL_NAME}"
+echo "  spec.nodeID: ${vol_spec_node}"
+echo "  status:"
+echo "    robustness: ${vol_robust}"
+echo "    state: ${vol_state}"
+
+echo ""
+echo "  Engine:"
+if [ "$engine_count" -gt 0 ]; then
+  echo "    name: ${engine_name}"
+  echo "    spec.nodeID: ${engine_spec_node}"
+  echo "    status:"
+  echo "      currentState: ${engine_state}"
+  echo "      currentReplicaAddressMap:"
+  
+  map_count=$(echo "$engine_replica_map_json" | jq 'length')
+  if [ "$map_count" -gt 0 ]; then
+    echo "$engine_replica_map_json" | jq -r '
+      to_entries[] |
+      "        - " + .key + ": " + .value
+    '
+  else
+    echo "        No replica address map found"
+  fi
+else
+  echo "    No engine found for volume ${VOL_NAME}"
+fi
+
+echo ""
+echo "  Replicas:"
 if [ "$replica_count" -gt 0 ]; then
-    # Print header with fixed-width columns.
-    printf "    %-60s %-20s %-20s\n" "Replica Name:" "Replica spec.nodeID:" "Replica status.currentState:"
-    echo "$replica_json" | jq -r \
-      '.items[] | [ .metadata.name, (.spec.nodeID // "N/A"), (.status.currentState // "N/A") ] | @tsv' \
-      | while IFS=$'\t' read -r r_name r_node r_state; do
-            printf "    %-60s %-20s %-20s\n" "$r_name" "$r_node" "$r_state"
+    # For each replica, extract desired fields:
+    # metadata.name, status.ip, status.storageIP, status.port, spec.nodeID,
+    # spec.diskPath, spec.diskID, status.currentState
+    echo "$replica_json" | \
+      jq -r '.items[] | [
+          .metadata.name,
+          (.status.ip // "N/A"),
+          (.status.storageIP // "N/A"),
+          (.status.port // "N/A"),
+          (.spec.nodeID // "N/A"),
+          (.spec.diskPath // "N/A"),
+          (.spec.diskID // "N/A"),
+          (.status.currentState // "N/A")
+      ] | @tsv' | \
+      while IFS=$'\t' read -r r_name r_ip r_storage_ip r_port r_node r_disk_path r_disk_id r_state; do
+          echo "    - name: ${r_name}"
+          echo "      status.ip: ${r_ip}"
+          echo "      status.storageIP: ${r_storage_ip}"
+          echo "      status.port: ${r_port}"
+          echo "      spec.nodeID: ${r_node}"
+          echo "      spec.diskPath: ${r_disk_path}"
+          echo "      spec.diskID: ${r_disk_id}"
+          echo "      status.currentState: ${r_state}"
+          echo
       done
 else
-    echo "  No replicas found for volume $VOL_NAME"
+    echo "    No replicas found for volume ${VOL_NAME}"
 fi
-echo "======================================="
+
+echo "================================================================================"
