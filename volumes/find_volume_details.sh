@@ -27,11 +27,13 @@ if [ "$engine_count" -gt 0 ]; then
     engine_name=$(echo "$engine_json" | jq -r '.items[0].metadata.name // "N/A"')
     engine_spec_node=$(echo "$engine_json" | jq -r '.items[0].spec.nodeID // "N/A"')
     engine_state=$(echo "$engine_json" | jq -r '.items[0].status.currentState // "N/A"')
+    engine_created=$(echo "$engine_json" | jq -r '.items[0].metadata.creationTimestamp // "N/A"')
     engine_replica_map_json=$(echo "$engine_json" | jq '.items[0].status.currentReplicaAddressMap')
 else
     engine_name="N/A"
     engine_spec_node="N/A"
     engine_state="N/A"
+    engine_created="N/A"
     engine_replica_map_json="{}"
 fi
 
@@ -69,6 +71,7 @@ if [ "$engine_count" -gt 0 ]; then
   else
     echo "        No replica address map found"
   fi
+  echo "      creationTimestamp: ${engine_created}"
 else
   echo "    No engine found for volume ${VOL_NAME}"
 fi
@@ -76,9 +79,6 @@ fi
 echo ""
 echo "  Replicas:"
 if [ "$replica_count" -gt 0 ]; then
-    # For each replica, extract desired fields:
-    # metadata.name, status.ip, status.storageIP, status.port, spec.nodeID,
-    # spec.diskPath, spec.diskID, status.currentState
     echo "$replica_json" | \
       jq -r '.items[] | [
           .metadata.name,
@@ -88,9 +88,13 @@ if [ "$replica_count" -gt 0 ]; then
           (.spec.nodeID // "N/A"),
           (.spec.diskPath // "N/A"),
           (.spec.diskID // "N/A"),
-          (.status.currentState // "N/A")
+          (.status.currentState // "N/A"),
+          (.spec.healthyAt // "N/A"),
+          (.spec.lastFailedAt // "N/A"),
+          (.spec.lastHealthyAt // "N/A"),
+          (.metadata.creationTimestamp // "N/A")
       ] | @tsv' | \
-      while IFS=$'\t' read -r r_name r_ip r_storage_ip r_port r_node r_disk_path r_disk_id r_state; do
+      while IFS=$'\t' read -r r_name r_ip r_storage_ip r_port r_node r_disk_path r_disk_id r_state r_healthy_at r_last_failed_at r_last_healthy_at r_created; do
           echo "    - name: ${r_name}"
           echo "      status.ip: ${r_ip}"
           echo "      status.storageIP: ${r_storage_ip}"
@@ -99,6 +103,10 @@ if [ "$replica_count" -gt 0 ]; then
           echo "      spec.diskPath: ${r_disk_path}"
           echo "      spec.diskID: ${r_disk_id}"
           echo "      status.currentState: ${r_state}"
+          echo "      spec.healthyAt: ${r_healthy_at}"
+          echo "      spec.lastFailedAt: ${r_last_failed_at}"
+          echo "      spec.lastHealthyAt: ${r_last_healthy_at}"
+          echo "      creationTimestamp: ${r_created}"
           echo
       done
 else

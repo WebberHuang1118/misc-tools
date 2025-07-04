@@ -1,0 +1,787 @@
+Fetching current Longhorn Orphan CRs from cluster...
+
+Checking each replica data name...
+[FOUND]  pvc-692e47ca-83af-42c2-899d-846cdf9e852c-0d8db52a  25G       
+          CR: orphan-c7f40f40650922c64c3b619624cfdbbf00a4dda485d2616fdb7df38e0a7ee1d5
+          Origin Path: ./replicas/pvc-692e47ca-83af-42c2-899d-846cdf9e852c-0d8db52a
+          DataName: pvc-692e47ca-83af-42c2-899d-846cdf9e852c-0d8db52a
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-dcae7f91  18G       
+          CR: orphan-66877dc3d22b644b2b16ef95998fd4d0f428f323f519475a00cee85d113d1974
+          Origin Path: ./replicas/pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-dcae7f91
+          DataName: pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-dcae7f91
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-d3acfde5-4371-4bcf-baa9-e3f3a33fda56-924a8082  21G       
+          CR: orphan-72c432f6d17f0ff8026a931a93e4df2ce97ef60513409a48f998bb2bab3cfe0d
+          Origin Path: ./replicas/pvc-d3acfde5-4371-4bcf-baa9-e3f3a33fda56-924a8082
+          DataName: pvc-d3acfde5-4371-4bcf-baa9-e3f3a33fda56-924a8082
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-b67e1e0b-cc70-4ac6-adf3-f36742ab8662-367820c2  2.0G      
+          CR: orphan-4598712136de1bc68049d304bd824b1eed3c12708e39e4eea94866694c6f25de
+          Origin Path: ./replicas/pvc-b67e1e0b-cc70-4ac6-adf3-f36742ab8662-367820c2
+          DataName: pvc-b67e1e0b-cc70-4ac6-adf3-f36742ab8662-367820c2
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-d577d0c2  22G       
+          CR: orphan-907c1ed365f187f3896b23ceab49c69a839b1bd52f5ff0b1d61866c442659fe7
+          Origin Path: ./replicas/pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-d577d0c2
+          DataName: pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-d577d0c2
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-b41d115c  9.9G      
+          CR: orphan-57996db979e3d0450059f745637567763ff478024caffde972f5061983f4e0c3
+          Origin Path: ./replicas/pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-b41d115c
+          DataName: pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-b41d115c
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e960c980-c472-48b5-af24-a31407924d0c-722578ce  15G       
+          CR: orphan-d453f1bc61e2ca173dfb5be9939f7929900d17fb276ae5343d123a5fe848ea96
+          Origin Path: ./replicas/pvc-e960c980-c472-48b5-af24-a31407924d0c-722578ce
+          DataName: pvc-e960c980-c472-48b5-af24-a31407924d0c-722578ce
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-e9727c59  14G       
+          CR: orphan-e2833fe63882e9a7042de065f80747ce4e5a96ed8ed8aef3886e914df640a0ce
+          Origin Path: ./replicas/pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-e9727c59
+          DataName: pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-e9727c59
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-de929dfa  18G       
+          CR: orphan-34db0910356ab746bf6a511e5d0b4c2d9a0b5c3765dd69ffd0d828dec73c17b1
+          Origin Path: ./replicas/pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-de929dfa
+          DataName: pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-de929dfa
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-41c7be78-37da-42a9-8963-2c7c6033558a-19a24f6a  16K       
+          CR: orphan-1d82ef912d66e78356f9744c3b05015aa672f40101ecbf63daa50bfc92bba400
+          Origin Path: ./replicas/pvc-41c7be78-37da-42a9-8963-2c7c6033558a-19a24f6a
+          DataName: pvc-41c7be78-37da-42a9-8963-2c7c6033558a-19a24f6a
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-a96bc4fc  11G       
+          CR: orphan-680640831b273b969afee75a69465f6cdb845ca224ca8a907623aa7c7265e9db
+          Origin Path: ./replicas/pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-a96bc4fc
+          DataName: pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-a96bc4fc
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-e6cb7cfa  12G       
+          CR: orphan-dc6821297c116a463566e8e1906b3166dbf1eda4e96b52ab4aa4316ab615e96c
+          Origin Path: ./replicas/pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-e6cb7cfa
+          DataName: pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-e6cb7cfa
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-04095cfa-b569-4861-9a37-8d52c0a90248-c9f221af  9.0G      
+          CR: orphan-4101bb3fdc1a08cdd1d54d5db723157dc433e1d2890c3ed51bcee5ec472f6b5b
+          Origin Path: ./replicas/pvc-04095cfa-b569-4861-9a37-8d52c0a90248-c9f221af
+          DataName: pvc-04095cfa-b569-4861-9a37-8d52c0a90248-c9f221af
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-9b442b22-9c70-4593-90f2-718853d29561-b84102ac  570M      
+          CR: orphan-70483c61b58e9060c6ba9fd7dbd9e7b82b5cb5de290ee7f313ca84fadabf90c6
+          Origin Path: ./replicas/pvc-9b442b22-9c70-4593-90f2-718853d29561-b84102ac
+          DataName: pvc-9b442b22-9c70-4593-90f2-718853d29561-b84102ac
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-259f1d92  22G       
+          CR: orphan-ed03feee9e70e0c1f2ad217ad2ebfb17f899ccd39a4511c41319cf2afdf18d4d
+          Origin Path: ./replicas/pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-259f1d92
+          DataName: pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-259f1d92
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-4ec06a14  24G       
+          CR: orphan-990088ed493dd32cb76383e9e1e4e540a709cf1b68f8c18e5518882d830618ec
+          Origin Path: ./replicas/pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-4ec06a14
+          DataName: pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-4ec06a14
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-bfdaf520  7.8G      
+          CR: orphan-219ef66d88fd19b5084b0778d9eca86fd3c669e3b043184ec4692bcc8125950e
+          Origin Path: ./replicas/pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-bfdaf520
+          DataName: pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-bfdaf520
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-b0c1221b-8e47-4e56-ad7a-8ae9457d646a-2b198583  16K       
+          CR: orphan-031eb9d4b7ed177b643623df50c5f2df62fb73c856e3fccc1ad89c006e1230f8
+          Origin Path: ./replicas/pvc-b0c1221b-8e47-4e56-ad7a-8ae9457d646a-2b198583
+          DataName: pvc-b0c1221b-8e47-4e56-ad7a-8ae9457d646a-2b198583
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-2db2aff6  23G       
+          CR: orphan-d6c4e894082dcdb125300b4ad5e40698bc41966f71167a47c2f238adea1d4001
+          Origin Path: ./replicas/pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-2db2aff6
+          DataName: pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-2db2aff6
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e960c980-c472-48b5-af24-a31407924d0c-66a8139a  16G       
+          CR: orphan-5b5cd13149d6d55d596992b4b32172a8df46461aac2c2aa9e4d51b83eb29e548
+          Origin Path: ./replicas/pvc-e960c980-c472-48b5-af24-a31407924d0c-66a8139a
+          DataName: pvc-e960c980-c472-48b5-af24-a31407924d0c-66a8139a
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-04095cfa-b569-4861-9a37-8d52c0a90248-5768ef18  7.3G      
+          CR: orphan-85a3e8d48ed0efc7cef0d453015115fde85bb3c84a20fdfde9b34b565c27b9b4
+          Origin Path: ./replicas/pvc-04095cfa-b569-4861-9a37-8d52c0a90248-5768ef18
+          DataName: pvc-04095cfa-b569-4861-9a37-8d52c0a90248-5768ef18
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-bcbdaf96-fcfe-4e6a-862a-2aa14990e1f3-aa01d05b  20K       
+          CR: orphan-9c597cab72ecd869788e5787231879435b792cf6f114cce307b0088d9137d0c8
+          Origin Path: ./replicas/pvc-bcbdaf96-fcfe-4e6a-862a-2aa14990e1f3-aa01d05b
+          DataName: pvc-bcbdaf96-fcfe-4e6a-862a-2aa14990e1f3-aa01d05b
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-bbe92a97  7.9G      
+          CR: orphan-3437a40a29437b70a8f487d50b33b51817ba7eeead179b8e2b9576583f905d63
+          Origin Path: ./replicas/pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-bbe92a97
+          DataName: pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-bbe92a97
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-4f25278f  8.8G      
+          CR: orphan-f1c9c173f1cc114855d7beba702ab6331aa5e804266d0a7173a3cb9208ee8d9c
+          Origin Path: ./replicas/pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-4f25278f
+          DataName: pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-4f25278f
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56866e5f-34dd-4342-8f63-2888079499c6-ea3f61c9  18G       
+          CR: orphan-a14b7c655f525502ec04f9ed9aaa8110c3afcc954733f7ed346dbaa1c81a7920
+          Origin Path: ./replicas/pvc-56866e5f-34dd-4342-8f63-2888079499c6-ea3f61c9
+          DataName: pvc-56866e5f-34dd-4342-8f63-2888079499c6-ea3f61c9
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-2a91e304-7638-4cc8-8a95-55547fe48898-97e99e3f  22G       
+          CR: orphan-459921b640f59817d18f06d89587ce5a13dc852da11a323c3d7faae539bfdcc7
+          Origin Path: ./replicas/pvc-2a91e304-7638-4cc8-8a95-55547fe48898-97e99e3f
+          DataName: pvc-2a91e304-7638-4cc8-8a95-55547fe48898-97e99e3f
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-3ab8553e  6.0G      
+          CR: orphan-7c25ad9eccaa3d765441795111e5e11a303fcb39cf9b60254f59ffe5efc9f91a
+          Origin Path: ./replicas/pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-3ab8553e
+          DataName: pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-3ab8553e
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-d2127c19  19G       
+          CR: orphan-52026dee7dfa65185276ec3a6ab299d09312e9a598d57748d76983e6ddacefb5
+          Origin Path: ./replicas/pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-d2127c19
+          DataName: pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-d2127c19
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-2a1e9a0d  18G       
+          CR: orphan-581d11cfed9debb7c2f35c6b0474b57ba33cff548ec6b20d44399e87f32617b7
+          Origin Path: ./replicas/pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-2a1e9a0d
+          DataName: pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-2a1e9a0d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-214f3867-05f7-427a-871a-7844c7250bd8-5473f666  6.3G      
+          CR: orphan-af67b20152d29c5d876b7a9058bfc5a3210d3fcc19100dc2fc6fa51308022aed
+          Origin Path: ./replicas/pvc-214f3867-05f7-427a-871a-7844c7250bd8-5473f666
+          DataName: pvc-214f3867-05f7-427a-871a-7844c7250bd8-5473f666
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f6ee071b-2948-449f-8285-77474a0c0966-7d003645  7.8G      
+          CR: orphan-9d7ef22b21c1cdbbd1a8f3630629029f516ecd1424388082d1180110901c7ea5
+          Origin Path: ./replicas/pvc-f6ee071b-2948-449f-8285-77474a0c0966-7d003645
+          DataName: pvc-f6ee071b-2948-449f-8285-77474a0c0966-7d003645
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-bcbdaf96-fcfe-4e6a-862a-2aa14990e1f3-98447bd5  20K       
+          CR: orphan-7b341b9f6f023542b0e0ac3bbca987eacc5cfe08e75b5b87f3a975e7a328a540
+          Origin Path: ./replicas/pvc-bcbdaf96-fcfe-4e6a-862a-2aa14990e1f3-98447bd5
+          DataName: pvc-bcbdaf96-fcfe-4e6a-862a-2aa14990e1f3-98447bd5
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56866e5f-34dd-4342-8f63-2888079499c6-0648c808  19G       
+          CR: orphan-819e3e97c854a650269fb0e440e77686b2bada7089fe8e184688e106ee45692a
+          Origin Path: ./replicas/pvc-56866e5f-34dd-4342-8f63-2888079499c6-0648c808
+          DataName: pvc-56866e5f-34dd-4342-8f63-2888079499c6-0648c808
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-b9df8221  19G       
+          CR: orphan-6fbd7ae1bb1ec078c0d0799011d8b922d6117010c1697566e6931b3a045951d8
+          Origin Path: ./replicas/pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-b9df8221
+          DataName: pvc-19bf041b-c6cd-40fb-a888-81965efdf13a-b9df8221
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f6ee071b-2948-449f-8285-77474a0c0966-8e8ec08f  5.6G      
+          CR: orphan-72f360b9cbbf9de8a92cd56e89c543a2983437f846d0fccd20976c2108fa20d4
+          Origin Path: ./replicas/pvc-f6ee071b-2948-449f-8285-77474a0c0966-8e8ec08f
+          DataName: pvc-f6ee071b-2948-449f-8285-77474a0c0966-8e8ec08f
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-c2fd589e  9.3G      
+          CR: orphan-3305d011392676b86122ab3867daf0f7c410d37f0d7831b18faf6ab7d4411d7b
+          Origin Path: ./replicas/pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-c2fd589e
+          DataName: pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-c2fd589e
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-4d10ca5d  19G       
+          CR: orphan-282f9265e0debd7356666fe43f7fc40da678e5cbe8d4a388aaf158a920991ccc
+          Origin Path: ./replicas/pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-4d10ca5d
+          DataName: pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-4d10ca5d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-4cb4f993  12G       
+          CR: orphan-8abf8ab9693881f5028cb2e3a3a9646d846ec74b9523cc42ae19e8ba5985de6f
+          Origin Path: ./replicas/pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-4cb4f993
+          DataName: pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-4cb4f993
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-096c98ba  8.8G      
+          CR: orphan-43ca716c8779af46f0984a07b4e631206d269dc07ca99463f54e71c5052406ef
+          Origin Path: ./replicas/pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-096c98ba
+          DataName: pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-096c98ba
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-8e525ae1  20K       
+          CR: orphan-f0b10d4439fcaa89f13d11042e4cdf5b804337d221586f7d48721e97b5b30fb6
+          Origin Path: ./replicas/pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-8e525ae1
+          DataName: pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-8e525ae1
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f6ee071b-2948-449f-8285-77474a0c0966-82a98ca8  8.4G      
+          CR: orphan-beec16d6c08a79d4520d224e8a670ef15983e4622064494883f7524f226e6e59
+          Origin Path: ./replicas/pvc-f6ee071b-2948-449f-8285-77474a0c0966-82a98ca8
+          DataName: pvc-f6ee071b-2948-449f-8285-77474a0c0966-82a98ca8
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-a6875be5  12G       
+          CR: orphan-77ef7dbeba2d619f2135e6bfb0d37b3063ede51e64430c58956aa4f1e4f6c043
+          Origin Path: ./replicas/pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-a6875be5
+          DataName: pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-a6875be5
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-00f12e1c  17G       
+          CR: orphan-5d89aa4536cc759430136ff4459a4d7c13e485936183c9965481f58b9da7234a
+          Origin Path: ./replicas/pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-00f12e1c
+          DataName: pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-00f12e1c
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-41c7be78-37da-42a9-8963-2c7c6033558a-8ba516b0  20K       
+          CR: orphan-00a545de1922c4e8609af7233c0ee4b27b65045e8b63ba4369d1f9c3e3407fd7
+          Origin Path: ./replicas/pvc-41c7be78-37da-42a9-8963-2c7c6033558a-8ba516b0
+          DataName: pvc-41c7be78-37da-42a9-8963-2c7c6033558a-8ba516b0
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-41c7be78-37da-42a9-8963-2c7c6033558a-2930b268  20K       
+          CR: orphan-1bd32d34e6815f4f256327c4845cdfaa6c99c9c9178d5c63ed7e1679ebfa0125
+          Origin Path: ./replicas/pvc-41c7be78-37da-42a9-8963-2c7c6033558a-2930b268
+          DataName: pvc-41c7be78-37da-42a9-8963-2c7c6033558a-2930b268
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-d1ab94ad  12G       
+          CR: orphan-51454a70881ba2794b1ae67c44496bee1be9a6396c3fb86ac7822f38c9e93a38
+          Origin Path: ./replicas/pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-d1ab94ad
+          DataName: pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-d1ab94ad
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-96ebf8df  8.7G      
+          CR: orphan-a59e8a883608ae29bb9072acc5245b5196faa28a58cbbbc406d9e1ec1e45f8a6
+          Origin Path: ./replicas/pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-96ebf8df
+          DataName: pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-96ebf8df
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e960c980-c472-48b5-af24-a31407924d0c-3c717e6d  15G       
+          CR: orphan-f9cc049611b1cfe1f3d46306e127bd7759ab0427ee39ab307d03fde4dede0386
+          Origin Path: ./replicas/pvc-e960c980-c472-48b5-af24-a31407924d0c-3c717e6d
+          DataName: pvc-e960c980-c472-48b5-af24-a31407924d0c-3c717e6d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-5b9a3db3  16K       
+          CR: orphan-772982291813f5c171b95e8ec271c51ed2bef884034a7fde8e6bb7bb44c63fac
+          Origin Path: ./replicas/pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-5b9a3db3
+          DataName: pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-5b9a3db3
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-70e0b1ae  12G       
+          CR: orphan-0658601bf59b8a1f5d390147498afcd332a360d47ac1fb3b45699c243e4fb66e
+          Origin Path: ./replicas/pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-70e0b1ae
+          DataName: pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-70e0b1ae
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-cf7abc95  20K       
+          CR: orphan-6380df417da0d9b7aca105fcfd4ce3d5f0048a2031e426692e177a1999ac7eae
+          Origin Path: ./replicas/pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-cf7abc95
+          DataName: pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-cf7abc95
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56866e5f-34dd-4342-8f63-2888079499c6-ff9f687c  19G       
+          CR: orphan-65558c5012ba64d488f594f3213453213520aee3d684daddd01e2d66cc0e2836
+          Origin Path: ./replicas/pvc-56866e5f-34dd-4342-8f63-2888079499c6-ff9f687c
+          DataName: pvc-56866e5f-34dd-4342-8f63-2888079499c6-ff9f687c
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-9ab0e374-039d-4139-8d49-7bdcac016ffc-92d370e6  21G       
+          CR: orphan-22746e209be0f2553c3aa749995930826058283f08d2d8e87749e695e5f8ebe2
+          Origin Path: ./replicas/pvc-9ab0e374-039d-4139-8d49-7bdcac016ffc-92d370e6
+          DataName: pvc-9ab0e374-039d-4139-8d49-7bdcac016ffc-92d370e6
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-8bbc5266  14G       
+          CR: orphan-0945696dfd146c456a9a94943d8bc8896065c6b0bcabb4ab589551d277d22861
+          Origin Path: ./replicas/pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-8bbc5266
+          DataName: pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-8bbc5266
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-1a78307a  29G       
+          CR: orphan-91b25dd6426b0ac102bb844fcb131ae73efe6eaeffacc6cab066aaec18fccee6
+          Origin Path: ./replicas/pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-1a78307a
+          DataName: pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-1a78307a
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-deb6c283  17G       
+          CR: orphan-1f328c777757cac0693097d8c2990e148037d8fc8c44513c775c937363dcd50f
+          Origin Path: ./replicas/pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-deb6c283
+          DataName: pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-deb6c283
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-b0c1221b-8e47-4e56-ad7a-8ae9457d646a-bf1f4389  20K       
+          CR: orphan-1c3123b9a408e7034f2316090da326a34b924119cd7cc319be6ec56005c7cd19
+          Origin Path: ./replicas/pvc-b0c1221b-8e47-4e56-ad7a-8ae9457d646a-bf1f4389
+          DataName: pvc-b0c1221b-8e47-4e56-ad7a-8ae9457d646a-bf1f4389
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-15b8f5a8-4300-4a44-892f-26608422819f-c7369e8e  20K       
+          CR: orphan-4b1d79f3cca28187ce5afdf26816f4383ca73c6a2c6de6f5abbe58ef549f3e58
+          Origin Path: ./replicas/pvc-15b8f5a8-4300-4a44-892f-26608422819f-c7369e8e
+          DataName: pvc-15b8f5a8-4300-4a44-892f-26608422819f-c7369e8e
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-99513d44-5455-4d5f-944c-d985fae328a3-9b0006c9  64M       
+          CR: orphan-a186aded0468dc0c2942ed27ba0514e69c93e2ebde4785c1c00ac1e6873313ea
+          Origin Path: ./replicas/pvc-99513d44-5455-4d5f-944c-d985fae328a3-9b0006c9
+          DataName: pvc-99513d44-5455-4d5f-944c-d985fae328a3-9b0006c9
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-08883b45  17G       
+          CR: orphan-8eb27b72fd819c45237b092ab0bdf616adc786fa333d38a23225a8cd8abf67c6
+          Origin Path: ./replicas/pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-08883b45
+          DataName: pvc-951c051f-cc3f-4787-9d35-f9f1469dcdb4-08883b45
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-345209a0  7.8G      
+          CR: orphan-4b3de01f13636643b07ee3641ad9272e23810ff86928865eee595fb777dc8363
+          Origin Path: ./replicas/pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-345209a0
+          DataName: pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-345209a0
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-08ec8748  23G       
+          CR: orphan-b16a0b54140ff01e947ca9d2c5c6f879bf899cc227422408e6ff449a16d5c6e2
+          Origin Path: ./replicas/pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-08ec8748
+          DataName: pvc-93763715-0bdf-4a0b-8a2e-4936621f24bc-08ec8748
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f6ee071b-2948-449f-8285-77474a0c0966-723a0a7c  6.2G      
+          CR: orphan-51beff9c3f0ee38c4ae8d0adb363a5d66e70cd0f3c772966b1e9bc3bdb3aabe7
+          Origin Path: ./replicas/pvc-f6ee071b-2948-449f-8285-77474a0c0966-723a0a7c
+          DataName: pvc-f6ee071b-2948-449f-8285-77474a0c0966-723a0a7c
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-b27f42c8  30G       
+          CR: orphan-fa4d30cf914ab27fd5857ade26a1dd7717e61b64ebe4096c5bd6ddbddc1b0f2a
+          Origin Path: ./replicas/pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-b27f42c8
+          DataName: pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-b27f42c8
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-b67e1e0b-cc70-4ac6-adf3-f36742ab8662-f66ffb05  2.0G      
+          CR: orphan-62a4771c3005b73924561d37578e43dab13a75ace14c7086033cb15ededb9bad
+          Origin Path: ./replicas/pvc-b67e1e0b-cc70-4ac6-adf3-f36742ab8662-f66ffb05
+          DataName: pvc-b67e1e0b-cc70-4ac6-adf3-f36742ab8662-f66ffb05
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-087da5e2  19G       
+          CR: orphan-194a160465804e1f67f0ef9b3f1b81cf3d9a1976d7f4a79986548a3e541e3909
+          Origin Path: ./replicas/pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-087da5e2
+          DataName: pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-087da5e2
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-2242a2ba  5.6G      
+          CR: orphan-0a356c971240858b37259cd5a1cd867b265106b47184610d20801f68769af3a2
+          Origin Path: ./replicas/pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-2242a2ba
+          DataName: pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-2242a2ba
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-3ec98ad4  11G       
+          CR: orphan-796cb94de3624c072e5120218644a0ea0fd4974580fb6640d18916964f27beae
+          Origin Path: ./replicas/pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-3ec98ad4
+          DataName: pvc-e1a14d80-adf2-49d2-ac4f-275185cfefd1-3ec98ad4
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-04095cfa-b569-4861-9a37-8d52c0a90248-01763498  5.5G      
+          CR: orphan-7ed8d8b3f2a0162ddbcfda9cbe5b57fb83513c85b80c2162383e25296547da37
+          Origin Path: ./replicas/pvc-04095cfa-b569-4861-9a37-8d52c0a90248-01763498
+          DataName: pvc-04095cfa-b569-4861-9a37-8d52c0a90248-01763498
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-6148b6ec  17G       
+          CR: orphan-b4630d6640640f4693e395287a904e401d76f54e0ddfe11b65b58065f3beb556
+          Origin Path: ./replicas/pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-6148b6ec
+          DataName: pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-6148b6ec
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-fccc8630  24G       
+          CR: orphan-e9ef6886311ba835e66115070fa13246e3fdc885ae30ad76c5a4c19f98290404
+          Origin Path: ./replicas/pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-fccc8630
+          DataName: pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-fccc8630
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8acfa449-6317-4083-aa60-4933aac64c08-32800728  20K       
+          CR: orphan-87cdb62b6c6f6a91cb5a6e54880b83fadea36a87314a079787f25f0ee2a59b1a
+          Origin Path: ./replicas/pvc-8acfa449-6317-4083-aa60-4933aac64c08-32800728
+          DataName: pvc-8acfa449-6317-4083-aa60-4933aac64c08-32800728
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-99513d44-5455-4d5f-944c-d985fae328a3-921d89f3  64M       
+          CR: orphan-fcb7f58476dfc803bfc5b39f5b2494fff1521fd6017d1219094aefa6cc326fbc
+          Origin Path: ./replicas/pvc-99513d44-5455-4d5f-944c-d985fae328a3-921d89f3
+          DataName: pvc-99513d44-5455-4d5f-944c-d985fae328a3-921d89f3
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-04095cfa-b569-4861-9a37-8d52c0a90248-b2d11f67  11G       
+          CR: orphan-92a277ff8cca392ba477824b3c22e94eb7d46f46bfea8633a5152ba428307374
+          Origin Path: ./replicas/pvc-04095cfa-b569-4861-9a37-8d52c0a90248-b2d11f67
+          DataName: pvc-04095cfa-b569-4861-9a37-8d52c0a90248-b2d11f67
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-e1b2732b  20K       
+          CR: orphan-c1b4e8bfdbe12a73bf9fbfaf3a2980a610d585756b693bd599be2a50be475fcd
+          Origin Path: ./replicas/pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-e1b2732b
+          DataName: pvc-8a8fa5b0-40ea-4ff3-8cc9-da37d1bb4679-e1b2732b
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-1ce41139-92f1-4da9-b1b0-6edbd471c63b-dd48aacf  20K       
+          CR: orphan-8b275246e053f1647d99f247d8fda18c43ba6d8e1c65215232b12414a1686599
+          Origin Path: ./replicas/pvc-1ce41139-92f1-4da9-b1b0-6edbd471c63b-dd48aacf
+          DataName: pvc-1ce41139-92f1-4da9-b1b0-6edbd471c63b-dd48aacf
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-8942d4cb  29G       
+          CR: orphan-20e2fce19bdf2491826e1721a7e47e3433910fc06a7fd08be87a064f029693b4
+          Origin Path: ./replicas/pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-8942d4cb
+          DataName: pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-8942d4cb
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e960c980-c472-48b5-af24-a31407924d0c-e4797fc0  17G       
+          CR: orphan-d16264a3eaa251cc261d8740e3e3b9be21c5efd7e6bd55c316772e4dfe7325b4
+          Origin Path: ./replicas/pvc-e960c980-c472-48b5-af24-a31407924d0c-e4797fc0
+          DataName: pvc-e960c980-c472-48b5-af24-a31407924d0c-e4797fc0
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-2a91e304-7638-4cc8-8a95-55547fe48898-ae597bf7  20G       
+          CR: orphan-7b6bf63f2ac6dec3687cb0f37098ffa4dd201c9456606004890a787294d72e85
+          Origin Path: ./replicas/pvc-2a91e304-7638-4cc8-8a95-55547fe48898-ae597bf7
+          DataName: pvc-2a91e304-7638-4cc8-8a95-55547fe48898-ae597bf7
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-afc86229  5.1G      
+          CR: orphan-fd138c24dc2a49b670254d4e9ceb61a67b1636f5d236b768dcef3490b08d7c4e
+          Origin Path: ./replicas/pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-afc86229
+          DataName: pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-afc86229
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-ab6e4ee5-0379-41fc-922d-08a9438a7774-99b22cc7  14G       
+          CR: orphan-ee81c21ac52830f56114fe1fe6abd5dc07ac4921fa825a65c092f7da2d45db59
+          Origin Path: ./replicas/pvc-ab6e4ee5-0379-41fc-922d-08a9438a7774-99b22cc7
+          DataName: pvc-ab6e4ee5-0379-41fc-922d-08a9438a7774-99b22cc7
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-0ba8d68e  17G       
+          CR: orphan-db0709fa836aa92911f7e47445d3100dee2c78ce357546e5cdae759b1f083cdd
+          Origin Path: ./replicas/pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-0ba8d68e
+          DataName: pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-0ba8d68e
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-af05dd87  8.5G      
+          CR: orphan-ee062b18b5dbc4c0d4355cee38066c89920cec0e03a03ab52951abedd11c604a
+          Origin Path: ./replicas/pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-af05dd87
+          DataName: pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-af05dd87
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-41ce7782  26G       
+          CR: orphan-c2f21b3a0045b30be209b9b4d72a6e635050754e8422b2ef84b1b857ab01db92
+          Origin Path: ./replicas/pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-41ce7782
+          DataName: pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-41ce7782
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-6bcf8a2d  26G       
+          CR: orphan-bef4305de146103571d797a2fce3452f61cc5fe24b480dd2092c6f813aa9deed
+          Origin Path: ./replicas/pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-6bcf8a2d
+          DataName: pvc-56086cbf-dc6d-4a02-b73c-5ce84edc18ce-6bcf8a2d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-1ab79425  8.1G      
+          CR: orphan-c748baef54940d61e2b0b0b952e59bb697fae2c00bf6a64a7b43775313841563
+          Origin Path: ./replicas/pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-1ab79425
+          DataName: pvc-ddd91941-fd80-4dca-a562-fe4009074cd9-1ab79425
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e88436dd-4da1-4996-8fe0-fb86ff99952e-23903fb4  27G       
+          CR: orphan-386a1ef5dde87ec2142da3cd21544b7ae68cab7da011a1320f1abbbb488be00f
+          Origin Path: ./replicas/pvc-e88436dd-4da1-4996-8fe0-fb86ff99952e-23903fb4
+          DataName: pvc-e88436dd-4da1-4996-8fe0-fb86ff99952e-23903fb4
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-04643213  8.6G      
+          CR: orphan-92cf9e5a40778c9cdce0f1eba95aa162003fca56f7d5d55d89f322fc366c4120
+          Origin Path: ./replicas/pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-04643213
+          DataName: pvc-bf418b15-5787-4b8c-bed0-81f6221831ef-04643213
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-214f3867-05f7-427a-871a-7844c7250bd8-a97cfe04  5.7G      
+          CR: orphan-f2a61d38c6f5530c0a378242039d5a6b32892e21b4780f8aff4b494ee0b2aab9
+          Origin Path: ./replicas/pvc-214f3867-05f7-427a-871a-7844c7250bd8-a97cfe04
+          DataName: pvc-214f3867-05f7-427a-871a-7844c7250bd8-a97cfe04
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-ce92fb26  5.5G      
+          CR: orphan-89eb58ba7b252c1d26418bbc30bee7f9e00b565a70f6005458ed26788947b9e8
+          Origin Path: ./replicas/pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-ce92fb26
+          DataName: pvc-50176f77-4866-4a70-bbb3-cfd62e05ce29-ce92fb26
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-da2612d2  21G       
+          CR: orphan-8c422553c86afe9df74196ec2859ac046e9329e2e04c6b47c424e68054195367
+          Origin Path: ./replicas/pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-da2612d2
+          DataName: pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-da2612d2
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-3cfb7547  12G       
+          CR: orphan-39d36fe41699550b35c965deb91753e5cd3c32d66d86452f809ded83c7f0edde
+          Origin Path: ./replicas/pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-3cfb7547
+          DataName: pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-3cfb7547
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-15b8f5a8-4300-4a44-892f-26608422819f-db088d5d  16K       
+          CR: orphan-f91f175db70576fda28433154ad80f8263348c1fc65cbfc03df07185f72f7360
+          Origin Path: ./replicas/pvc-15b8f5a8-4300-4a44-892f-26608422819f-db088d5d
+          DataName: pvc-15b8f5a8-4300-4a44-892f-26608422819f-db088d5d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-6f4d8250  13G       
+          CR: orphan-8a38001ce1f02cb496c5a4c2712a346d0e40e1505e3b75cab42e768347e2a516
+          Origin Path: ./replicas/pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-6f4d8250
+          DataName: pvc-e76b7168-b4fa-41b9-88fb-623e0af7dc5d-6f4d8250
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-2a91e304-7638-4cc8-8a95-55547fe48898-c02d30e4  24G       
+          CR: orphan-dd71783ce738d6232f2730dab2dcf4949dc1b66c8df485adbe86e4dbe07a33fe
+          Origin Path: ./replicas/pvc-2a91e304-7638-4cc8-8a95-55547fe48898-c02d30e4
+          DataName: pvc-2a91e304-7638-4cc8-8a95-55547fe48898-c02d30e4
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-99513d44-5455-4d5f-944c-d985fae328a3-9587cf1e  64M       
+          CR: orphan-8bcd8fe19df8710368dd99c448ff80e1f6f5600b365fe147e253d64a4934acad
+          Origin Path: ./replicas/pvc-99513d44-5455-4d5f-944c-d985fae328a3-9587cf1e
+          DataName: pvc-99513d44-5455-4d5f-944c-d985fae328a3-9587cf1e
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-d3acfde5-4371-4bcf-baa9-e3f3a33fda56-86856a34  20G       
+          CR: orphan-b1a04ea5d27f4feaf469f0caa54e54459d5515abbc22d07e4e7299a25628616e
+          Origin Path: ./replicas/pvc-d3acfde5-4371-4bcf-baa9-e3f3a33fda56-86856a34
+          DataName: pvc-d3acfde5-4371-4bcf-baa9-e3f3a33fda56-86856a34
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-ab9ab2d6  7.4G      
+          CR: orphan-18a5dff7f7c37af31348ce448f80ea984eb763b16cd6d58882a866084d79b232
+          Origin Path: ./replicas/pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-ab9ab2d6
+          DataName: pvc-580b6d30-e3bd-4953-a9d8-dabdadf0dbce-ab9ab2d6
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-56866e5f-34dd-4342-8f63-2888079499c6-d49514cb  19G       
+          CR: orphan-1eef0d8b29280cf0739ecef15954a87c4f1563a1fd7d5fb602a7558b74bcd9ef
+          Origin Path: ./replicas/pvc-56866e5f-34dd-4342-8f63-2888079499c6-d49514cb
+          DataName: pvc-56866e5f-34dd-4342-8f63-2888079499c6-d49514cb
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-8515841d  19G       
+          CR: orphan-cdec62f9ce4985a0567452a0f7febc6961727978f6f4a9ce7f94194ceb5db638
+          Origin Path: ./replicas/pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-8515841d
+          DataName: pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-8515841d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-0089f4f9  32G       
+          CR: orphan-2e0b338a4b9ad8b3e256c5164849b61f683cb8737ec9e60eff43eb9f6c372308
+          Origin Path: ./replicas/pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-0089f4f9
+          DataName: pvc-3a83f1f5-2eb3-4fdb-8e9d-df71191b834c-0089f4f9
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-214f3867-05f7-427a-871a-7844c7250bd8-0de58f49  9.3G      
+          CR: orphan-a8a793b8b30f66eae05a861f797e13e06437e6cf5b2eac1deada46c2ed00d6a2
+          Origin Path: ./replicas/pvc-214f3867-05f7-427a-871a-7844c7250bd8-0de58f49
+          DataName: pvc-214f3867-05f7-427a-871a-7844c7250bd8-0de58f49
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-00fdf767  8.9G      
+          CR: orphan-62213c44b84a60c4545928038192f49397d1405bea053da5b07e9d845faf228f
+          Origin Path: ./replicas/pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-00fdf767
+          DataName: pvc-f8affeaf-4a3e-4fba-84e4-a0cab6979afd-00fdf767
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-afb4d8e3-2635-4435-a5a0-1831421983a4-94a18d3d  168M      
+          CR: orphan-0f9ec7a362517460db0be67540e06714d952b3994266ab5882cd62ba73e0a12c
+          Origin Path: ./replicas/pvc-afb4d8e3-2635-4435-a5a0-1831421983a4-94a18d3d
+          DataName: pvc-afb4d8e3-2635-4435-a5a0-1831421983a4-94a18d3d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-1afc8737-e19b-40a9-a2a7-abc62a750c83-abc65e58  203M      
+          CR: orphan-6179998f93ce1324d8c8bee986618b916b7ec4175d549ec52da98c0335fb2752
+          Origin Path: ./replicas/pvc-1afc8737-e19b-40a9-a2a7-abc62a750c83-abc65e58
+          DataName: pvc-1afc8737-e19b-40a9-a2a7-abc62a750c83-abc65e58
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-2cd60a0b  13G       
+          CR: orphan-695c92bb8e3accd8286ac0d26cfa92f2986edd8f145364ae865408ad453404cc
+          Origin Path: ./replicas/pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-2cd60a0b
+          DataName: pvc-7fdc168b-0e73-4e6c-9e01-8156ba9957a5-2cd60a0b
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e88436dd-4da1-4996-8fe0-fb86ff99952e-02001d50  26G       
+          CR: orphan-583ade268e481c8b453b6a684d0d40132bd93b16069204b7e774baa9938e0dbf
+          Origin Path: ./replicas/pvc-e88436dd-4da1-4996-8fe0-fb86ff99952e-02001d50
+          DataName: pvc-e88436dd-4da1-4996-8fe0-fb86ff99952e-02001d50
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-1e802c78  18G       
+          CR: orphan-d853bbe4890f910faf9a03851d4cb1ed0453120acfff5a2773475fe6e85b3cc9
+          Origin Path: ./replicas/pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-1e802c78
+          DataName: pvc-e2ce0969-1c49-4bc7-a0a2-07e5a6482f6a-1e802c78
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-a16c17bb  27G       
+          CR: orphan-e0f0da5ecb4f977855f7b243dc79d4f3813a7cb6ee1e85636b129c8802543f4f
+          Origin Path: ./replicas/pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-a16c17bb
+          DataName: pvc-8a1c35a0-e711-4f29-8c25-540a6c5f28bd-a16c17bb
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-abb4a60d  21G       
+          CR: orphan-e72f9b510cf73bbdaa5c76588f6091f5adaae0089368ea279e134a447d02c798
+          Origin Path: ./replicas/pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-abb4a60d
+          DataName: pvc-fb7aa474-7328-409e-b600-1168d78d1a5b-abb4a60d
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+[FOUND]  pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-e2b597ae  11G       
+          CR: orphan-9fd2363e233f5fee58606f21a458d5ab3876134fb03dedd28d382c90033355a7
+          Origin Path: ./replicas/pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-e2b597ae
+          DataName: pvc-e9fc407c-070b-45da-a821-23d17f3f3f16-e2b597ae
+              Conditions: DataCleanable:True	Error:False 
+                  --> This orphan is cleanable.
+                  --> This orphan has no errors.
+
+Check complete.
+Summary:
+  Found: 111
+    DataCleanable is True: 111
+    Error is False: 111
+  Missing: 0

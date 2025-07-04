@@ -1,4 +1,4 @@
-#!/bin/bash
+G#!/bin/bash
 # The script creates a QEMU image and attaches it to a Vagrant (libvirt) VM.
 #
 # What the script does:
@@ -22,7 +22,7 @@ TARGET_DEVICE=$2
 DISK_SIZE=$3
 DISK_WWN=$4
 DISK_NAME=$TARGET_VM-$TARGET_DEVICE
-: ${DISKS_DIR:=/tmp/libvirt_disks}
+: ${DISKS_DIR:=/home/webber/libvirt_disks}
 
 if [ -z $DISK_WWN ]; then
         DISK_WWN=0x5000c50015$(date +%s | sha512sum | head -c 6)
@@ -57,4 +57,4 @@ cat > $XML_FILE <<EOF
     </disk>
 EOF
 
-virsh attach-device --domain $TARGET_VM --file $XML_FILE --live
+virsh attach-device --domain $TARGET_VM --file $XML_FILE --persistent
