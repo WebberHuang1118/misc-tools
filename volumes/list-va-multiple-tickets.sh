@@ -32,11 +32,13 @@ jq -r '
   | select(.spec.attachmentTickets | length > 1)
   | {pv: .metadata.name,
      tk: .spec.attachmentTickets,
-     st: .status.attachmentTicketStatuses}
+     st: .status.attachmentTicketStatuses,
+     ts: .metadata.creationTimestamp}
   | @json' | while read -r obj; do
     pv=$(jq -r '.pv' <<<"$obj")
+    ts=$(jq -r '.ts' <<<"$obj")
     echo
-    echo "$pv"
+    echo "LH VA created: $ts ($pv)"
 
     # Longhorn tickets
     jq -r '.tk | to_entries[] | @json' <<<"$obj" | while read -r t; do
