@@ -101,7 +101,8 @@ done < <(
 # ---------- transform function ----------
 transform() {
   while IFS= read -r line; do
-    if [[ "$line" =~ .*/logs/longhorn-system/([^/]+)/[^:]+:(.+) ]]; then
+    # Match both ./logs/longhorn-system/pod/file.log and logs/longhorn-system/pod/file.log formats
+    if [[ "$line" =~ ^\.?/?logs/longhorn-system/([^/]+)/[^:]+:(.+) ]]; then
       pod="${BASH_REMATCH[1]}"
       rest="${BASH_REMATCH[2]}"
       info="${pod_map[$pod]:-$pod unknown}"
