@@ -1,0 +1,15 @@
+# Sample VM list file
+# Lines starting with # are comments and will be ignored
+# Empty lines are also ignored
+
+# Development VMs
+dev1
+dev2
+
+# Production VMs
+prod1
+prod2
+
+# Test VMs
+testing1
+testing2
