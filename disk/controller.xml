@@ -1,1 +1,1 @@
-    <controller type='scsi' model='virtio-scsi' index='0'/>
+    <controller type='scsi' model='virtio-scsi' index='1'/>
